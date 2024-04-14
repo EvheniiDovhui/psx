@@ -1,0 +1,139 @@
+:root {
+	--primary-font: 'Roboto', sans-serif;
+	--Iris: #a52a2a;
+	--OCEAN: #800000;
+	--active: #2196f3;
+	--NAVY-BLUE: #2e2f42;
+	--GREEN: #31d0aa;
+	--SLATE: #434455;
+	--LIGHT-SLATE: #8e8f99;
+	--cornflower: #e7e9fc;
+	--cloud: #f4f4fd;
+	--GREY: #2e2f42;
+	--WHITE: #ffffff;
+	--Dairy: #fcfcfc;
+	--footer-background: #000000;
+	--animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	--primary-font-size: 16px;
+	--primary-line-height: 1.5;
+	--primary-letter-spacing: 0.02em;
+
+	--height: 40;
+	--width: 200;
+	--border: 5;
+	--speed: 0.4;
+	--ease: cubic-bezier(0.85, 0.01, 0.4, 0.97);
+	--color-bk: #6cd4ff;
+}
+/* BODY MAIN STYLES */
+body {
+	font-family: var(--primary-font);
+	color: var(--SLATE);
+	background-color: var(--WHITE);
+	font-size: var(--primary-font-size);
+	line-height: var(--primary-line-height);
+	letter-spacing: var(--primary-letter-spacing);
+
+	background-image: linear-gradient(
+			rgba(46, 47, 66, 0.2),
+			rgba(46, 47, 66, 0.2)
+		),
+		url(../img/hero-background.jpg);
+	background-repeat: no-repeat;
+	/* background-position: center; */
+
+	background-size: cover;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.container {
+	min-width: 320px;
+	max-width: 428px;
+	margin: 0 auto;
+	padding: 0 16px;
+}
+/* Tablet screen*/
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+/* Desktop screen*/
+@media screen and (min-width: 1158px) {
+	.container {
+		max-width: 1158px;
+		padding: 0 15px;
+	}
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 16px;
+}
+.logo {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+}
+.nav {
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+}
+.navList {
+	display: flex;
+	gap: 8px;
+}
+.active {
+	color: var(--active);
+}
+.navListOne {
+}
+.navLink {
+}
+.conteiner {
+}
+.hero {
+	width: 100%;
+	/* height: 600px; */
+}
+.aboutMe {
+}
+.blog {
+}
+.contact {
+}
+.services {
+}
